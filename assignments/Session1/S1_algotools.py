@@ -3,10 +3,12 @@ Session 1
 @author : Adam MACHEDA, LP Dim
 """
 
+import numpy
+
 tab = [2, 4, -1, 0, -1, 2]
 
 # This function computes the average of the positive elements of a table
-def average_above_zero((tab):
+def average_above_zero(tab):
     if len(tab) == 0 :
         return ValueError('Valeur nulle')
     else :
