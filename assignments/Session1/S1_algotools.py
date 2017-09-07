@@ -6,7 +6,7 @@ Session 1
 tab = [2, 4, -1, 0, -1, 2]
 
 # This function computes the average of the positive elements of a table
-def algo1(tab):
+def average_above_zero((tab):
     if len(tab) == 0 :
         return ValueError('Valeur nulle')
     else :
@@ -22,7 +22,7 @@ def algo1(tab):
         return float(Moy)
 
 # This function gets the maximum value of a table
-def algo2(tab):
+def max_value(tab):
     if len(tab) == 0 :
         return ValueError('Valeur nulle')
     else :
@@ -34,7 +34,7 @@ def algo2(tab):
         return float(Max)
 
 # This function reverses a table without the use of any other table
-def algo3(tab):
+def reverse_table(tab):
     if len(tab) == 0 :
         return ValueError('Valeur nulle')
     else :
@@ -46,4 +46,4 @@ def algo3(tab):
 
         return tab
 
-print("{var}".format(var=algo3(tab)))
+print("{var}".format(var=reverse_table(tab)))
