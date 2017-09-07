@@ -18,12 +18,15 @@ def algo1(tab):
     return float(Moy)
 
 def algo2(tab):
-    Max = 0
-    for item in tab:
-        if item > Max:
-            Max = item
+    if len(tab) == 0 :
+        return ValueError('Valeur nulle')
+    else
+        Max = tab[0]
+        for item in tab:
+            if item > Max:
+                Max = item
 
-    return Max
+        return float(Max)
 
 print("Insertion balistique : {var}".format(var=algo2(tab)))
 raw_input()
