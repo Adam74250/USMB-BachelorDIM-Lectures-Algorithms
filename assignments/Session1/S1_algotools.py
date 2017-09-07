@@ -17,5 +17,13 @@ def algo1(tab):
 
     return float(Moy)
 
-print("Insertion balistique : {var}".format(var=algo1(tab)))
+def algo2(tab):
+    Max = 0
+    for item in tab:
+        if item > Max:
+            Max = item
+
+    return Max
+
+print("Insertion balistique : {var}".format(var=algo2(tab)))
 raw_input()
