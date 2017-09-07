@@ -20,7 +20,7 @@ def algo1(tab):
 def algo2(tab):
     if len(tab) == 0 :
         return ValueError('Valeur nulle')
-    else
+    else :
         Max = tab[0]
         for item in tab:
             if item > Max:
@@ -29,4 +29,3 @@ def algo2(tab):
         return float(Max)
 
 print("Insertion balistique : {var}".format(var=algo2(tab)))
-raw_input()
