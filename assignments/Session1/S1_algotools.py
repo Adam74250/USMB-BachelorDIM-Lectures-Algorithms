@@ -114,7 +114,13 @@ def roi_bbox(mat):
                 if ymax < j:
                     ymax = j
 
-    return [[ymin, xmin], [ymax, xmin], [ymin, xmax], [ymax, xmax]]
+    bbox_coords = numpy.zeros([4, 2])
+    bbox_coords[0,:] = numpy.array([ymin, xmin])
+    bbox_coords[1,:] = numpy.array([ymax, xmin])
+    bbox_coords[2,:] = numpy.array([ymin, xmax])
+    bbox_coords[3,:] = numpy.array([ymax, xmax])
+
+    return bbox_coords
 
 print(mat)
 print("{var}".format(var=roi_bbox(mat)))
