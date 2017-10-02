@@ -124,7 +124,7 @@ def roi_bbox(mat):
 
  ##
  # Random array filling
- def random_ﬁll_sparse(tab, vfill):
+ def random_fill_sparse(tab, vfill):
  	n = len(tab)
  	for i in range(vfill):
         ok = False
