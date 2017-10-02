@@ -6,8 +6,8 @@ install:
   - pip install -r requirements.txt
 addons:
   sonarcloud:
-    organization: albenoit-github
+    organization: Adam74250
 # command to run tests
 script:
   - pytest --cov .
-  - sonar-scanner        
+  - sonar-scanner
