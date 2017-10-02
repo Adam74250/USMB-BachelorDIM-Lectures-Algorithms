@@ -122,5 +122,22 @@ def roi_bbox(mat):
 
     return bbox_coords
 
+ ##
+ # Random array filling
+ def random_ﬁll_sparse(tab, vfill):
+ 	n = len(tab)
+ 	for i in range(vfill):
+        ok = False
+        while not (filled):
+            x = random.randint(0, n)
+            y = random.randint(0, n)
+            if tab[x][y] == '':
+                tab[x][y] = 'X'
+                ok = True
+
+    return tab
+
+
+
 print(mat)
 print("{var}".format(var=roi_bbox(mat)))
