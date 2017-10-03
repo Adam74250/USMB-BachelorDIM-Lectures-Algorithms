@@ -137,6 +137,11 @@ def roi_bbox(mat):
 
     return tab
 
+######################
+## TESTS
+import pytest
+
+def testMaxValue():
 
 
 print(mat)
