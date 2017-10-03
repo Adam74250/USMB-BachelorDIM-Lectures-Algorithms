@@ -128,7 +128,7 @@ def roi_bbox(mat):
  	n = len(tab)
  	for i in range(vfill):
         ok = False
-        while not (filled):
+        while ok == False:
             x = random.randint(0, n)
             y = random.randint(0, n)
             if tab[x][y] == '':
